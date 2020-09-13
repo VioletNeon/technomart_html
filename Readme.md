@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/29/user/1296301).
+* Студент: [Валерий Куликов](https://up.htmlacademy.ru/htmlcss/29/user/1296301).
 * Наставник: [Руслан Бреев](https://up.htmlacademy.ru/htmlcss/29/user/488939).
 
 ---
