@@ -69,10 +69,11 @@
   --basic-indigo: #3D546F;
   --basic-dark: #1D2739;
   --basic-darken: #161D29;
-  --basic-gray: #A9A9A9;
+  --basic-gray: #a9a9a9;
   --basic-black: #000000;
   --basic-white: #ffffff;
-  --basic-neutral: #C5C5C5;
+  --basic-neutral: #c5c5c5;
+  --basic-light-neutral: #e5e5e5;
   --bacic-light: #F3F7F9;
   --basic-extra-light-grey: #F7F3EC;
   --bacic-extra-light: #F1F5F7;
@@ -102,12 +103,15 @@
   --special-white: rgba(255, 255, 255, 0.5);
   --special-opacity-white: rgba(255, 255, 255, 0.3);
   --special-shadow-tab: #405069;
+  --special-opacity-black: rgba(0, 0, 0, 0.3);
+  --special-opacity-gray: rgba(197, 197, 197, 0.3);
+  --special-opacity-extra-gray: rgba(169, 169, 169, 0.3);
 
   /* Button-buy */
   --button-buy-shadow: #367315;
 
   /* Button-radio-checkbox */
-  --button-dark-gray: #B5B5B5;
+  --button-dark-gray: #b5b5b5;
 }
 /* Body */
 .page-body {
@@ -126,6 +130,7 @@
 }
 
 /* Main navigation */
+
 .main-header {
   background-color: var(--basic-light-blue);
 }
@@ -252,15 +257,15 @@
   background-color: var(--special-white);
 }
 
-.search::before:hover {
+.search:hover::before {
   background-color: var(--basic-white);
 }
 
-.marker-score::before:hover {
+.marker-score:hover::before {
   background-color: var(--basic-white);
 }
 
-.basket-score::before:hover {
+.basket-score:hover::before {
   background-color: var(--basic-white);
 }
 
@@ -287,15 +292,15 @@
   background: var(--basic-darken);
 }
 
-.search ::before :focus {
+.search:focus::before {
   background-color: var(--basic-light-red);
 }
 
-.marker-score::before:focus {
+.marker-score:focus::before {
   background-color: var(--special-white);
 }
 
-.basket-score::before:focus {
+.basket-score:focus::before {
   background-color: var(--special-white);
 }
 
@@ -320,6 +325,14 @@
   text-decoration: none;
   background-color: var(--special-opacity-white);
   color: var(--basic-white);
+}
+
+.proposal-item a:hover {
+  background-color: var(--special-opacity-gray);
+}
+
+.proposal-item a:focus {
+  background-color: var(--special-opacity-extra-gray);
 }
 
 .proposal-item h3 {
@@ -404,6 +417,18 @@
   list-style: none;
 }
 
+
+.hidden-sticker {
+  display: inline-block;
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: var(--basic-light-red);
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
 .product-item {
   font-family: "PT Sans", Tahoma, sans-serif;
   font-weight: 700;
@@ -483,6 +508,23 @@
 
 .producers-section {
   background-color: var(--basic-white);
+}
+
+.producers-list {
+  list-style: none;
+}
+
+.producer-item>a>img {
+  border: 1px solid var(--basic-light-neutral);
+}
+
+.producer-item>a>img:hover {
+  box-shadow: 0 0 10px 0 var(--logo-shadow);
+}
+
+.producer-item>a>img:focus {
+  box-shadow: 0 0 5px 0 var(--logo-shadow);
+  opacity: 0.5;
 }
 
 /* Tabs by service */
@@ -599,7 +641,7 @@
   line-height: 24px;
 }
 
-.company-delivery-list li::before {
+.company-delivery-list::before li {
   background-image: var(--basic-light-red);
 }
 
@@ -626,11 +668,11 @@
   color: var(--basic-white);
 }
 
-.navigation-footer-item a:hover {
+.navigation-footer-item:hover a {
   text-decoration: underline;
 }
 
-.navigation-footer-item a:focus {
+.navigation-footer-item:focus a {
   color: var(--special-white);
   text-decoration: none;
 }
@@ -645,11 +687,11 @@
   color: var(--basic-peach);
 }
 
-.footer-proposal-item a:hover {
+.footer-proposal-item:hover a {
   text-decoration: underline;
 }
 
-.footer-proposal-item a:focus {
+.footer-proposal-item:focus a {
   color: var(--basic-peach-opacity);
   text-decoration: none;
 }
@@ -669,8 +711,8 @@
   background-color: var(--social-dark-blue);
 }
 
-.social-button a:hover,
-.social-button a:focus {
+.social-button:hover a,
+.social-button:focus a {
   background-color: var(--basic-light-red);
 }
 
@@ -691,4 +733,369 @@
 .feedback-link:focus {
   text-decoration: none;
   color: var(--basic-red);
+}
+
+/* Catalog-page */
+
+.breadcrumbs-item {
+  list-style: none;
+}
+
+.breadcrumbs-list::before {
+  background-image: var(--basic-light-gray);
+}
+
+.breadcrumbs-item::before a {
+  background-image: var(--basic-light-gray);
+}
+
+.breadcrumbs-item a {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.center h1 {
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-dark-blue);
+  background-color: var(--basic-light-blue);
+}
+
+/* Filter-section */
+
+.filter-section h2,
+.sort-section h2,
+.price-container,
+.price-range span,
+.sort-content {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light-grey);
+}
+
+.filter-content h3 {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* Price-filter */
+.price-range,
+.price-range span {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.filter-producers-list {
+  list-style: none;
+}
+
+/* Producer-filter */
+.producer + label,
+.filter-content label {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.producer {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.producer+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.producer+label::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid var(--basic-neutral);
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.producer:checked+label::before {
+  background-image: var(--basic-neutral);
+}
+
+/* стили при наведении курсора на checkbox */
+.producer:not(:disabled):not(:checked)+label:hover::before {
+  border-color: var(--button-dark-gray);
+  background-image: var(--basic-neutral);
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.producer:disabled+label::before {
+  background-color: var(--button-dark-gray);
+  opacity: 0.5;
+}
+
+/* для элемента input c type="radio" */
+.powered>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* Powered-filter */
+
+/* для элемента label связанного с .powered */
+.powered>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.powered>span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 4px solid var(--basic-neutral);
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.powered>input+span:hover::before {
+  border-color: var(--button-dark-gray);
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.powered>input:checked+span::before {
+  box-shadow: inset 0 0 0 4px var(--basic-white), inset 0 0 0 10px var(--basic-neutral);
+}
+
+.powered>input:checked+span:hover::before {
+  box-shadow: inset 0 0 0 4px var(--basic-white), inset 0 0 0 10px var(--button-dark-gray);
+}
+
+.powered>input:disabled+span::before {
+  border-color: var(--button-dark-gray);
+  opacity: 0.4;
+}
+
+.filter-button {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  background: var(--basic-white);
+  border: 1px solid var(--button-dark-gray);
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+/* Sorting */
+
+.sort-filter>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.sort-filter span {
+  color: var(--special-opacity-black);
+  border-bottom: 1px dotted var(--basic-light-red);
+}
+
+.sort-filter:hover span {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-light-red);
+}
+
+.sort-filter:active span {
+  color: var(--basic-light-red);
+  border-bottom: none;
+}
+
+.sort-filter>input:checked+span {
+  color: var(--basic-light-red);
+  border-bottom: none;
+}
+
+/* для элемента input c type="radio" */
+.sort-ascending>input,
+.sort-descending>input {
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .powered */
+.sort-ascending>span,
+.sort-descending>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.sort-ascending>span::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 8px solid transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-bottom: 8px solid var(--basic-neutral);
+}
+
+.sort-descending>span::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 8px solid transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-top: 8px solid var(--basic-neutral);
+}
+
+/* стили при наведении курсора на радио */
+.sort-ascending>input+span:hover::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 8px solid transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-bottom: 8px solid var(--basic-black);
+}
+
+.sort-descending>input+span:hover::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 8px solid transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-top: 8px solid var(--basic-black);
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.sort-ascending>input:checked+span::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 8px solid transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-bottom: 8px solid var(--basic-light-red);
+}
+
+.sort-descending>input:checked+span::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 8px solid transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-top: 8px solid var(--basic-light-red);
+}
+
+/* Page-list */
+
+.catalog-pages-list {
+  list-style: none;
+}
+
+.catalog-page a {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-decoration: none;
+  border: 1px solid var(--basic-light-neutral);
+}
+
+.catalog-page a:hover {
+  border: 1px solid var(--basic-neutral);
+}
+
+.catalog-page a:focus {
+  border: 1px solid var(--basic-light-red);
+}
+
+.catalog-page a:active {
+  border: 1px solid var(--basic-light-red);
+  background-color: var(--basic-light-red);
+  color: var(--basic-white);
+}
+
+.catalog-page-current a,
+.catalog-page-current a:hover,
+.catalog-page-current a:focus,
+.catalog-page-current a:active {
+  border: 1px solid var(--basic-light-red);
+  background-color: var(--basic-light-red);
+  color: var(--basic-white);
+}
+
+/* Article */
+
+.about-product {
+  background: var(--bacic-extra-light);
+}
+
+.about-product h3 {
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-product p {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
 }
