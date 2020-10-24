@@ -883,7 +883,7 @@
 .for-line-shadow::after {
   content: url("../img/line-shadow-decoration.png");
   position: relative;
-  left: 231px;
+  left: 232px;
   bottom: 210px;
 }
 
