@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body hg container">
-    <header class="main-header hg-header">
+  <body class="page-body">
+    <header class="hg-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/main-header-logo.png" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»">
@@ -36,17 +36,17 @@
         </ul>
       </nav>
       <div class="initialization-container">
-        <p class="brief-resume resume-bar"><i>Интернет-магазин<br>
-          строительных материалов<br>
-          и интрументов для ремонта</i></p>
-        <a class="contacts-phone-link contacts-bar" href="tel:+78125550555">
+        <p class="brief-resume">
+          <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
+        </p>
+        <a class="contacts-phone-link" href="tel:+78125550555">
           <svg width="19" height="20" fill="none">
             <path d="M15.57 19.48h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.59c.09-.77.47-1.3.9-1.75C2.44 1.27 3.26.54 4 .52c.56-.02 1.5.38 1.88.9.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" fill="var(--basic-neutral-gray)"/>
           </svg>  +7 (812) 555-05-55
         </a>
-        <p class="header-address address-bar">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="header-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <div class="login-bar">
-          <a class="initialization-link login-link login" href="">
+          <a class="initialization-link login" href="">
             <svg class="icon-login" width="20" height="18" fill="none">
               <path d="M14.17 9L5.7.5v6H0v5h5.71v6L14.17 9z" fill="var(--basic-neutral)"/>
               <path d="M16.18 15.51h-4.79v1.99h4.79c2.07 0 2.86-1.81 2.88-3.03V3.53C19.04 2.3 18.26.5 16.18.5h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" fill="var(--basic-neutral)"/>
@@ -57,32 +57,32 @@
         </div>
       </div>
       <section class="supporting-order-section">
-        <form class="search-form search-bar">
-          <label class="search-block">
+        <form class="search-bar">
+          <label>
             <input class="search" type="text" placeholder="Поиск:">
             <svg class="icon-search" width="40" height="44" viewBox="-17 -12 40 44" fill="none">
-              <path class="icon-search" fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="var(--basic-white)" opacity=".3"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="var(--basic-white)" opacity=".3"/>
             </svg>
           </label>
         </form>
-        <ul class="preference-block preference-bar">
-          <li class="marker-score score-bar">
+        <ul class="preference-block">
+          <li class="marker-score">
             <svg class="marker-icon" width="14" height="16" fill="none">
               <path d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z" fill="var(--basic-white)"/>
             </svg>
             <a href="">Закладки: 0</a>
           </li>
-          <li class="basket-score basket-bar">
+          <li class="basket-score">
             <svg class="basket-icon" width="15" height="15" fill="none">
               <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
             </svg>
             <a href="">Корзина: 0</a>
           </li>
         </ul>
-        <a class="checkout-link checkout-bar" href="">Оформить заказ</a>
+        <a class="checkout-link" href="">Оформить заказ</a>
       </section>
     </header>
-    <main class="center hg-catalog">
+    <main class="hg-catalog">
       <h1 class="head-catalog-page">Перфораторы</h1>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
@@ -92,18 +92,24 @@
         </li>
         <li class="breadcrumbs-item">
           <a href="catalog.html">
-            <svg width="8" height="12" fill="none"><path d="M7.2 5.7L1.7 1A.6.6 0 001 1c-.2.1-.2.4 0 .6L6.2 6 1 10.4c-.2.2-.2.5 0 .6.2.2.5.2.7 0l5.5-4.7.2-.3c0-.1 0-.2-.2-.3z" fill="var(--basic-light-gray)"/></svg>
+            <svg width="8" height="12" fill="none">
+              <path d="M7.2 5.7L1.7 1A.6.6 0 001 1c-.2.1-.2.4 0 .6L6.2 6 1 10.4c-.2.2-.2.5 0 .6.2.2.5.2.7 0l5.5-4.7.2-.3c0-.1 0-.2-.2-.3z" fill="var(--basic-light-gray)"/>
+            </svg>
             Каталог
           </a>
         </li>
         <li class="breadcrumbs-item">
           <a href="">
-            <svg width="8" height="12" fill="none"><path d="M7.2 5.7L1.7 1A.6.6 0 001 1c-.2.1-.2.4 0 .6L6.2 6 1 10.4c-.2.2-.2.5 0 .6.2.2.5.2.7 0l5.5-4.7.2-.3c0-.1 0-.2-.2-.3z" fill="var(--basic-light-gray)"/></svg>
+            <svg width="8" height="12" fill="none">
+              <path d="M7.2 5.7L1.7 1A.6.6 0 001 1c-.2.1-.2.4 0 .6L6.2 6 1 10.4c-.2.2-.2.5 0 .6.2.2.5.2.7 0l5.5-4.7.2-.3c0-.1 0-.2-.2-.3z" fill="var(--basic-light-gray)"/>
+            </svg>
             Инструмент
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <svg width="8" height="12" fill="none"><path d="M7.2 5.7L1.7 1A.6.6 0 001 1c-.2.1-.2.4 0 .6L6.2 6 1 10.4c-.2.2-.2.5 0 .6.2.2.5.2.7 0l5.5-4.7.2-.3c0-.1 0-.2-.2-.3z" fill="var(--basic-light-gray)"/></svg>
+          <svg width="8" height="12" fill="none">
+            <path d="M7.2 5.7L1.7 1A.6.6 0 001 1c-.2.1-.2.4 0 .6L6.2 6 1 10.4c-.2.2-.2.5 0 .6.2.2.5.2.7 0l5.5-4.7.2-.3c0-.1 0-.2-.2-.3z" fill="var(--basic-light-gray)"/>
+          </svg>
           Перфораторы
         </li>
       </ul>
@@ -124,40 +130,65 @@
               <li>
                 <label for="bosch">
                   <input class="producer" type="checkbox" id="bosch" name="bosch" checked>
-                  <svg class="unchecked-producer" width="24" height="23" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/></svg>
-                  <svg class="checked-producer" width="27" height="23" fill="none"><path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/><path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/></svg>
+                  <svg class="unchecked-producer" width="24" height="23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/>
+                  </svg>
+                  <svg class="checked-producer" width="27" height="23" fill="none">
+                    <path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/>
+                    <path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/>
+                  </svg>
                   <span>Bosch</span>
                 </label>
               </li>
               <li>
                 <label for="interscol">
                   <input class="producer" type="checkbox" id="interscol" name="interscol">
-                  <svg class="unchecked-producer" width="24" height="23" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/></svg>
-                  <svg class="checked-producer" width="27" height="23" fill="none"><path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/><path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/></svg>
+                  <svg class="unchecked-producer" width="24" height="23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/>
+                  </svg>
+                  <svg class="checked-producer" width="27" height="23" fill="none">
+                    <path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/>
+                    <path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/>
+                  </svg>
                   <span>Интерскол</span>
                 </label>
               </li>
               <li>
                 <label for="makita">
                   <input class="producer" type="checkbox" id="makita" name="makita" checked>
-                  <svg class="unchecked-producer" width="24" height="23" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/></svg>
-                  <svg class="checked-producer" width="27" height="23" fill="none"><path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/><path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/></svg>
+                  <svg class="unchecked-producer" width="24" height="23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/>
+                  </svg>
+                  <svg class="checked-producer" width="27" height="23" fill="none">
+                    <path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/>
+                    <path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/>
+                  </svg>
                   <span>Makita</span>
                 </label>
               </li>
               <li>
                 <label for="dewalt">
                   <input class="producer" type="checkbox" id="dewalt" name="dewalt">
-                  <svg class="unchecked-producer" width="24" height="23" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/></svg>
-                  <svg class="checked-producer" width="27" height="23" fill="none"><path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/><path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/></svg>
+                  <svg class="unchecked-producer" width="24" height="23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/>
+                  </svg>
+                  <svg class="checked-producer" width="27" height="23" fill="none">
+                    <path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/>
+                    <path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/>
+                  </svg>
                   <span>Dewalt</span>
                 </label>
               </li>
               <li>
                 <label for="hitachi">
                   <input class="producer" type="checkbox" id="hitachi" name="hitachi">
-                  <svg class="unchecked-producer" width="24" height="23" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/></svg>
-                  <svg class="checked-producer" width="27" height="23" fill="none"><path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/><path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/></svg>
+                  <svg class="unchecked-producer" width="24" height="23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.2 0h17a3 3 0 013 3v17a3 3 0 01-3 3h-17a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.5-.5-1-1-1h-17a1 1 0 00-1 1v17c0 .5.4 1 1 1h17c.5 0 1-.5 1-1V3z" fill="var(--basic-neutral)"/>
+                  </svg>
+                  <svg class="checked-producer" width="27" height="23" fill="none">
+                    <path d="M7.4 7.5l-2.8 2.8 7.8 7.8 14-14-2.9-2.8-11.1 11.1-5-5z" fill="var(--basic-neutral)"/>
+                    <path d="M21.2 20c0 .5-.5 1-1 1h-17a1 1 0 01-1-1V3c0-.5.4-1 1-1H20L21.7.4a3 3 0 00-1.5-.4h-17a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.8l-2 2V20z" fill="var(--basic-neutral)"/>
+                  </svg>
                   <span>Hitachi</span>
                 </label>
               </li>
@@ -194,168 +225,184 @@
               <input type="checkbox" id="sortByFunctional" name="byPrice" class="sortByFunctional">
               <span>По функционалу</span>
             </label>
-            <div class="sort-value">
-              <label>
+            <label class="sort-item">
                 <input class="sort-ascending" type="radio" name="sort" value="ascending" checked>
-                <svg width="12" height="10" fill="none"><path d="M5.7 0l5.5 10H.2" fill="var(--basic-neutral)"/></svg>
-              </label>
-              <label>
+                <svg width="12" height="10" fill="none">
+                  <path d="M5.7 0l5.5 10H.2" fill="var(--basic-neutral)"/>
+                </svg>
+            </label>
+            <label class="sort-item">
                 <input class="sort-descending" type="radio" name="sort" value="descending">
-                <svg width="12" height="10" fill="none"><path d="M5.7 10L.2 0h11" fill="var(--basic-neutral)"/></svg>
-              </label>
-            </div>
+                <svg width="12" height="10" fill="none">
+                  <path d="M5.7 10L.2 0h11" fill="var(--basic-neutral)"/>
+                </svg>
+            </label>
           </form>
         </div>
-        <ul class="popular-products-list punchers-list">
-          <li class="product-item product-item-first">
+        <ul class="punchers-list">
+          <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
             <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>30500 Р.</s></p>
+              <p class="previous-price">
+                <s>30500 Р.</s>
+              </p>
               <p class="price">25500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
             <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>30500 Р.</s></p>
+              <p class="previous-price">
+                <s>30500 Р.</s>
+              </p>
               <p class="price">25500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
             <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>30500 Р.</s></p>
+              <p class="previous-price">
+                <s>30500 Р.</s>
+              </p>
               <p class="price">25500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 3000</h4>
             <img src="img/puncher-bfg-3000.jpg" width="127" height="112" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>22500 Р.</s></p>
+              <p class="previous-price">
+                <s>22500 Р.</s>
+              </p>
               <p class="price">15500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
             <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>30500 Р.</s></p>
+              <p class="previous-price">
+                <s>30500 Р.</s>
+              </p>
               <p class="price">25500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 2000</h4>
             <img src="img/puncher-bfg-2000.jpg" width="127" height="112" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="price without-previous-price">12500 Р.</p>
+              <p class="price">12500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 3000</h4>
             <img src="img/puncher-bfg-3000.jpg" width="127" height="112" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>22500 Р.</s></p>
+              <p class="previous-price">
+                <s>22500 Р.</s>
+              </p>
               <p class="price">15500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
             <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="previous-price"><s>30500 Р.</s></p>
+              <p class="previous-price">
+                <s>30500 Р.</s>
+              </p>
               <p class="price">25500 Р.</p>
             </div>
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 2000</h4>
             <img src="img/puncher-bfg-2000.jpg" width="127" height="112" alt="">
-            <div class="hidden-button hidden-button-container">
-              <a class="button-buy button-buy-bar" href="">
+            <div class="hidden-button">
+              <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
                   <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="var(--basic-white)"/>
                 </svg>
                 Купить
               </a>
-              <a class="button-marker button-marker-bar" href="">В закладки</a>
+              <a class="button-marker" href="">В закладки</a>
             </div>
             <div class="price-product-bar">
-              <p class="price without-previous-price">12500 Р.</p>
+              <p class="price">12500 Р.</p>
             </div>
           </li>
         </ul>
@@ -376,10 +423,7 @@
       </section>
       <article class="about-product">
         <h3>Пара слов о перфораторах</h3>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют&nbsp;электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </article>
     </main>
     <footer class="page-footer hg-footer">
@@ -404,7 +448,7 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <p class="footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <p class="footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <ul class="footer-proposal-list">
@@ -423,9 +467,7 @@
         </ul>
       </section>
       <section class="footer-copyright-social">
-        <p class="copyright">© 2010-2019 Компания "Техномарт"<br>
-          Все права защищены
-        </p>
+        <p class="copyright">© 2010-2019 Компания "Техномарт" Все права защищены</p>
         <ul class="social-list">
           <li>
             <a class="social-button" href="#">
