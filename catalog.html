@@ -116,16 +116,29 @@
       <section class="filter-section">
         <h2>Фильтр:</h2>
         <form class="filter-content" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="filter-price">
-            <h3>Цена:</h3>
-            <div class="price-container">
-              <label for="price"></label>
-              <input class="price-item" type="range" id="price" name="price" min="0" max="3000" step="1">
+          <fieldset class="filter-price">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="price-container">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-range">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <span>-</span>
+                <label class="max-price">
+                  <input type="number" name="max-price" value="30000">
+                </label>
+              </div>
             </div>
-            <p class="price-range"><span>0</span> - <span>30000</span></p>
-          </div>
-          <div class="filter-producers">
-            <h3>Производители:</h3>
+          </fieldset>
+          <fieldset class="filter-producers">
+            <legend>Производители:</legend>
             <ul class="filter-producers-list">
               <li>
                 <label for="bosch">
@@ -193,9 +206,9 @@
                 </label>
               </li>
             </ul>
-          </div>
-          <div class="filter-powered">
-            <h3>Питание:</h3>
+          </fieldset>
+          <fieldset class="filter-powered">
+            <legend>Питание:</legend>
             <label class="powered">
               <input type="radio" name="powered" value="accumulator" checked>
               <span>Аккумуляторные</span>
@@ -204,7 +217,7 @@
               <input type="radio" name="powered" value="circuit">
               <span>Сетевые</span>
             </label>
-          </div>
+          </fieldset>
           <button class="filter-button" type="submit" formaction="https://echo.htmlacademy.ru/">Показать</button>
         </form>
       </section>
@@ -242,7 +255,7 @@
         <ul class="punchers-list">
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
-            <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
+            <img src="img/puncher-bfg-6000.jpg" width="144" height="112" alt="">
             <div class="hidden-button">
               <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
@@ -261,7 +274,7 @@
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
-            <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
+            <img src="img/puncher-bfg-6000.jpg" width="144" height="112" alt="">
             <div class="hidden-button">
               <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
@@ -278,9 +291,9 @@
               <p class="price">25500 Р.</p>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item new-sticker">
             <h4>Перфоратор BOSCH BFG 6000</h4>
-            <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
+            <img src="img/puncher-bfg-6000.jpg" width="144" height="112" alt="">
             <div class="hidden-button">
               <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
@@ -297,7 +310,7 @@
               <p class="price">25500 Р.</p>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item new-sticker">
             <h4>Перфоратор BOSCH BFG 3000</h4>
             <img src="img/puncher-bfg-3000.jpg" width="127" height="112" alt="">
             <div class="hidden-button">
@@ -318,7 +331,7 @@
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
-            <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
+            <img src="img/puncher-bfg-6000.jpg" width="144" height="112" alt="">
             <div class="hidden-button">
               <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
@@ -335,7 +348,7 @@
               <p class="price">25500 Р.</p>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item new-sticker">
             <h4>Перфоратор BOSCH BFG 2000</h4>
             <img src="img/puncher-bfg-2000.jpg" width="127" height="112" alt="">
             <div class="hidden-button">
@@ -351,7 +364,7 @@
               <p class="price">12500 Р.</p>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item new-sticker">
             <h4>Перфоратор BOSCH BFG 3000</h4>
             <img src="img/puncher-bfg-3000.jpg" width="127" height="112" alt="">
             <div class="hidden-button">
@@ -372,7 +385,7 @@
           </li>
           <li class="product-item">
             <h4>Перфоратор BOSCH BFG 6000</h4>
-            <img src="img/puncher-bfg-6000.jpg" width="144" height="128" alt="">
+            <img src="img/puncher-bfg-6000.jpg" width="144" height="112" alt="">
             <div class="hidden-button">
               <a class="button-buy" href="">
                 <svg width="15" height="15" fill="none">
@@ -389,7 +402,7 @@
               <p class="price">25500 Р.</p>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item new-sticker">
             <h4>Перфоратор BOSCH BFG 2000</h4>
             <img src="img/puncher-bfg-2000.jpg" width="127" height="112" alt="">
             <div class="hidden-button">
