@@ -112,6 +112,8 @@
   --special-background-toggle: #ababab;
   --special-price-green: #00ca74;
   --special-price-gray: #D7DCDE;
+  --special-shadow-module: rgba(0, 0, 0, 0.15);
+  --special-background-white: #F4F4F4;
 
   /* Button-buy */
   --button-buy-shadow: #367315;
@@ -563,9 +565,9 @@
   color: var(--basic-white);
   width: 135px;
   height: 38px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   left: 23px;
   top: 35px;
@@ -657,6 +659,14 @@
   position: relative;
   left: 195px;
   bottom: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.proposal-item {
+  width: 300px;
+  height: 123px;
+  display: grid;
   padding: 0;
   margin: 0;
 }
@@ -986,11 +996,16 @@
   opacity: 0.5;
 }
 
-.new-sticker {
+.new-sticker::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: 70px;
   background-image:
     url(../img/new-sticker.svg);
   background-repeat: no-repeat;
   background-position: right top;
+  z-index: 3;
 }
 
 .price-product-bar {
@@ -1239,7 +1254,7 @@
   padding: 0;
   margin: 0;
   background-color: transparent;
-  z-index: 3;
+  z-index: 2;
 }
 
 .service-delivery p {
@@ -1260,7 +1275,7 @@
   grid-row: 1 / 6;
   padding: 0;
   margin: 19px 0 0 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .service-warranty::after {
@@ -1269,7 +1284,7 @@
   grid-row: 1 / 6;
   padding: 0;
   margin: 0 0 0 85px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .service-credit::after {
@@ -1278,7 +1293,7 @@
   grid-row: 1 / 6;
   padding: 0;
   margin: 0 0 0 15px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .button-send-request {
@@ -1288,7 +1303,7 @@
   margin: 0 0 60px 0;
   width: 195px;
   height: 38px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .button-send-request a {
@@ -2210,4 +2225,162 @@
   grid-row: 3 / 5;
   padding: 37px 30px 0 0;
   margin: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-white);
+  filter: drop-shadow(0px 4px 20px var(--special-shadow-module));
+  border-top: 7px solid var(--basic-light-red);
+  z-index: 5;
+  padding: 0;
+  display: none;
+}
+
+.modal-feedback {
+  text-transform: none;
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  width: 620px;
+  height: 430px;
+}
+
+.name-form {
+  display: grid;
+  width: inherit;
+  height: inherit;
+  grid-template-columns: 1fr 220px 220px 1fr;
+  grid-template-rows:
+    50px
+    min-content
+    min-content
+    112px;
+  box-sizing: inherit;
+  column-gap: 20px;
+}
+
+.name-container input,
+.email-container input,
+.message-container textarea {
+  border: 2px solid var(--basic-neutral);
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-gray);
+  padding: 5px 11px 5px 11px;
+  outline: none;
+  margin-top: 12px;
+}
+
+.name-container input,
+.email-container input {
+  width: 220px;
+}
+
+.name-container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.email-container {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  padding: 0;
+  margin: 0 0 13px 0;
+}
+
+.message-container {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.message-container textarea {
+  width: 460px;
+  min-height: 114px;
+  resize: none;
+}
+
+.name-form label {
+  padding: 0;
+  margin: 0;
+}
+
+.button-message-container {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--special-background-white);
+}
+
+.button-send-message {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-red);
+  border: none;
+  outline: none;
+  min-width: 460px;
+  min-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 34px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 24px;
+  width: 22px;
+  height: 3px;
+  background-color: var(--basic-light-red);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-map {
+  width: 943px;
+  height: 449px;
+}
+
+.modal-map iframe {
+  border: none;
 }

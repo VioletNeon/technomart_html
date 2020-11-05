@@ -432,5 +432,33 @@
         </p>
       </section>
     </footer>
+
+    <section class="modal modal-feedback">
+      <h2 class="hidden-head">Личный кабинет</h2>
+      <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="name-container">
+          <label for="name-enter">Ваше имя:</label>
+          <input id="name-enter" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="email-container">
+          <label for="email-enter">Ваш e-mail:</label>
+          <input id="email-enter" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="message-container">
+          <label for="message-field">Текст письма:</label>
+          <textarea rows="6" cols="70" maxlength="450" name="message-field" id="message-field" placeholder="В свободной форме"></textarea>
+        </p>
+        <div class="button-message-container">
+          <button class="button-send-message" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="hidden-head">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412368!2d30.320894615677183!3d59.938796869048424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1604519675273!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
