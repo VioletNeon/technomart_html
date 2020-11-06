@@ -36,13 +36,29 @@
         <p class="header-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <div class="login-bar">
           <a class="initialization-link login" href="">
-            <svg class="icon-login" width="20" height="18" fill="none">
+            <svg class="icon-login-enter" width="20" height="18" fill="none">
               <path d="M14.17 9L5.7.5v6H0v5h5.71v6L14.17 9z" fill="var(--basic-neutral)"/>
               <path d="M16.18 15.51h-4.79v1.99h4.79c2.07 0 2.86-1.81 2.88-3.03V3.53C19.04 2.3 18.26.5 16.18.5h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" fill="var(--basic-neutral)"/>
             </svg>
+            <svg class="icon-private" width="20" height="18" fill="none">
+              <path d="M17.9 14.2a22 22 0 01-5.2-2.4c-.7-.5-.8-1.6-.5-2.4A5.5 5.5 0 0014 5C14 2.3 12.2 0 10 0S6 2.3 6 5c0 1.9.7 3.5 1.8 4.4.3.8.2 1.9-.5 2.4-1 .7-3 1.6-5.2 2.4C0 14.9 0 18 0 18h20s0-3.1-2.1-3.8z" fill="var(--basic-neutral)"/>
+            </svg>
             Войти
+            <svg class="icon-login-exit" width="20" height="18" fill="none">
+              <path d="M20 9L11.1.5v6h-6v5h6v6L20 9z" fill="var(--basic-neutral)"/>
+              <path d="M2.1 14.5v-11c0-.3.2-1 1-1h5v-2h-5c-2.2 0-3 1.8-3 3v11c0 1.2.8 3 3 3h5v-2h-5c-.8 0-1-.7-1-1z" fill="var(--basic-neutral)"/>
+            </svg>
           </a>
           <a class="initialization-link registration" href="">Регистрация</a>
+          <ul class="private-orders-links">
+            <li><a href="">Мои заказы</a></li>
+            <li>
+              <svg width="4" height="5" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 .5a2 2 0 110 4 2 2 0 010-4z" fill="var(--basic-dark-blue)"/>
+              </svg>
+            </li>
+            <li><a href="">Личный кабинет</a></li>
+          </ul>
         </div>
       </div>
       <section class="supporting-order-section">
@@ -72,9 +88,9 @@
       </section>
     </header>
     <main class="hg-main">
-      <h1 class="hidden-head">Интернет-магазин "Техномарт"</h1>
+      <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
       <section class="proposals">
-        <h2 class="hidden-head">Товары и услуги</h2>
+        <h2 class="visually-hidden">Товары и услуги</h2>
         <ul class="proposals-list">
           <li class="proposal-material proposal-item new-sticker">
             <h3>Материалы</h3>
@@ -117,7 +133,7 @@
           </li>
         </ul>
         <section class="catalog-puncher-drill">
-          <h2 class="hidden-head">Каталог</h2>
+          <h2 class="visually-hidden">Каталог</h2>
           <ul class="slider-list">
             <li class="slider-item slide-current">
               <h3 class="slide-title">Перфораторы</h3>
@@ -150,7 +166,7 @@
       <section class="popular-products">
         <div class="popular-head-container">
           <h2 class="popular-head">Популярные товары:</h2>
-          <h3 class="hidden-head">Товары от популярных брендов</h3>
+          <h3 class="visually-hidden">Товары от популярных брендов</h3>
           <div class="products-button-container">
             <a class="main-button-link" href="catalog.html">Все популярные товары</a>
           </div>
@@ -396,7 +412,7 @@
         <ul class="social-list">
           <li>
             <a class="social-button" href="#">
-              <span class="visually-hidden-social">Вконтакте</span>
+              <span class="visually-hidden">Вконтакте</span>
               <svg width="44" height="44" fill="none">
                 <path class="button-social-background" fill-rule="evenodd" clip-rule="evenodd" d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z" fill="var(--social-dark-blue)"/>
                 <path d="M24.54 25.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.748-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.004-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.764-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.241-.173-.578-.229-.578-.229l-3.576.023s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.215-.225.206-.648.206-.648s-.03-1.977.9-2.268z" fill="var(--basic-white)"/>
@@ -405,7 +421,7 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <span class="visually-hidden-social">Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
               <svg width="44" height="44" fill="none">
                 <path class="button-social-background" fill-rule="evenodd" clip-rule="evenodd" d="M21.9 1.5a20.3 20.3 0 110 40.6 20.3 20.3 0 010-40.6z" fill="var(--social-dark-blue)"/>
                 <path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4h4z" fill="var(--basic-white)"/>
@@ -414,7 +430,7 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <span class="visually-hidden-social">Инстаграм</span>
+              <span class="visually-hidden">Инстаграм</span>
               <svg width="44" height="44" fill="none">
                 <path class="button-social-background" fill-rule="evenodd" clip-rule="evenodd" d="M21.9 1.5a20.3 20.3 0 110 40.6 20.3 20.3 0 010-40.6z" fill="var(--social-dark-blue)"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.2a6.5 6.5 0 1012.6 0H29v9H14zm11-11h4v-4h-4v4z" fill="var(--basic-white)"/>
@@ -432,9 +448,8 @@
         </p>
       </section>
     </footer>
-
     <section class="modal modal-feedback">
-      <h2 class="hidden-head">Личный кабинет</h2>
+      <h2 class="visually-hidden">Личный кабинет</h2>
       <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="name-container">
           <label for="name-enter">Ваше имя:</label>
@@ -454,9 +469,8 @@
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-
     <section class="modal modal-map">
-      <h2 class="hidden-head">Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412368!2d30.320894615677183!3d59.938796869048424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1604519675273!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
