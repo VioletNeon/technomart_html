@@ -741,6 +741,10 @@
   cursor: pointer;
 }
 
+.slider-indicators button:focus {
+  box-shadow: 0 0 0 2px var(--basic-gray);
+}
+
 .slider-item {
   display: none;
 }
@@ -759,6 +763,11 @@
   cursor: pointer;
   border: none;
   outline: 0;
+}
+
+.button-backward:focus,
+.button-forward:focus {
+  box-shadow: 0 0 0 2px var(--basic-gray);
 }
 
 .button-backward {
@@ -1809,6 +1818,10 @@
   left: 160px;
 }
 
+.price-container .toggle:focus {
+  box-shadow: 0 0 0 2px var(--basic-gray);
+}
+
 .range-filter {
   display: flex;
   flex-direction: column;
@@ -1895,6 +1908,10 @@
   line-height: 19px;
 }
 
+.producer:focus~svg path {
+  fill: var(--basic-gray);
+}
+
 .producer {
   z-index: -1;
   opacity: 0;
@@ -1949,6 +1966,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  padding: 0;
 }
 
 .filter-powered legend {
@@ -1967,14 +1985,14 @@
 
 /* для элемента label связанного с .powered */
 .powered>span {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   user-select: none;
 }
 
 /* создание в label псевдоэлемента  before со следующими стилями */
 .powered>span::before {
-  content: '';
+  content: "";
   display: block;
   width: 20px;
   height: 20px;
@@ -1991,6 +2009,10 @@
 /* стили при наведении курсора на радио */
 .powered>input+span:hover::before {
   border-color: var(--button-dark-gray);
+}
+
+.powered>input:focus+span::before {
+  border-color: var(--basic-gray);
 }
 
 /* стили для радиокнопки, находящейся в состоянии checked */
@@ -2021,6 +2043,10 @@
   height: 38px;
   margin: 25px 0 0 0;
   outline: none;
+}
+
+.filter-button:focus {
+  border: 3px solid var(--button-dark-gray);
 }
 
 /* Sorting */
@@ -2097,6 +2123,10 @@
   border-bottom: none;
 }
 
+.sort-filter>input:focus+span {
+  box-shadow: 0 0 0 2px var(--basic-light-red);
+}
+
 .sort-item {
   margin: 0 10px 5px 13px;
 }
@@ -2113,6 +2143,11 @@
 .sort-ascending:hover+svg>path,
 .sort-descending:hover+svg>path {
   fill: var(--basic-black);
+}
+
+.sort-ascending:focus+svg,
+.sort-descending:focus+svg {
+  box-shadow: 0 0 0 2px var(--basic-light-red);
 }
 
 /* стили для радиокнопки, находящейся в состоянии checked */
