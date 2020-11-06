@@ -530,10 +530,6 @@
   row-gap: 66px;
 }
 
-.hidden-head {
-  display: none;
-}
-
 .proposals {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
