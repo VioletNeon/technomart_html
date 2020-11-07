@@ -452,7 +452,8 @@
   padding: 0;
 }
 
-.add-basket {
+.add-basket,
+.add-marker {
   background: var(--basic-light-red);
 }
 
@@ -501,7 +502,8 @@
   box-sizing: border-box;
 }
 
-.add-basket:active {
+.add-basket:active,
+.add-marker:active {
   opacity: 0.3;
   background: var(--basic-light-red);
 }
@@ -722,7 +724,6 @@
   position: relative;
   bottom: -96px;
   text-align: center;
-  z-index: 20;
   display: flex;
   justify-content: center;
 }
@@ -732,7 +733,7 @@
   margin: 5px;
   width: 10px;
   height: 10px;
-  background-color: var(--basic-light-red);
+  background-color: var(--basic-white);
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   outline: 0;
@@ -752,7 +753,7 @@
 }
 
 .slider-indicators .current {
-  background-color: var(--basic-white);
+  background-color: var(--basic-light-red);
 }
 
 .button-backward,
@@ -763,9 +764,9 @@
   outline: 0;
 }
 
-.button-backward:focus,
-.button-forward:focus {
-  box-shadow: 0 0 0 2px var(--basic-gray);
+.button-backward:focus path,
+.button-forward:focus path {
+  fill: var(--button-dark-gray);
 }
 
 .button-backward {
@@ -2328,6 +2329,12 @@
   width: 220px;
 }
 
+.name-container input:focus,
+.email-container input:focus,
+.message-container textarea:focus {
+  box-shadow: 0 0 0 1px var(--basic-gray);
+}
+
 .name-container {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -2384,6 +2391,10 @@
   align-items: center;
 }
 
+.button-send-message:focus {
+  box-shadow: 0 0 0 2px var(--basic-light-red);
+}
+
 .modal-close {
   position: absolute;
   top: 0;
@@ -2405,6 +2416,11 @@
   width: 22px;
   height: 3px;
   background-color: var(--basic-light-red);
+}
+
+.modal-close:focus::before,
+.modal-close:focus::after {
+  box-shadow: 0 0 0 1px var(--basic-light-red);
 }
 
 .modal-close::before {
@@ -2589,3 +2605,53 @@
   fill: var(--basic-neutral);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
