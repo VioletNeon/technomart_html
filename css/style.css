@@ -115,10 +115,8 @@
   --special-shadow-module: rgba(0, 0, 0, 0.15);
   --special-background-white: #F4F4F4;
 
-  /* Button-buy */
+  /* Buttons */
   --button-buy-shadow: #367315;
-
-  /* Button-radio-checkbox */
   --button-dark-gray: #b5b5b5;
 }
 /* Body */
