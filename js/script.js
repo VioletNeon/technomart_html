@@ -17,7 +17,8 @@ const mapClose = mapPopup.querySelector(".modal-close");
 const pushBackward = document.querySelector(".button-backward");
 const pushForward = document.querySelector(".button-forward");
 const indicators = document.querySelectorAll(".slider-indicators button");
-const sliders = document.querySelectorAll(".slider-item");
+const slidersHead = document.querySelectorAll(".slider-item");
+const sliders = document.querySelector(".catalog-puncher-drill");
 
 /* Message-modal-options */
 let isStorageSupport = true;
@@ -98,21 +99,21 @@ let eventArrayIndicators = [];
 for (let i = 0; i < indicators.length; i++) {
   eventArrayIndicators.push(indicators[i].addEventListener("click", function (evt) {
     for (let j = 0; j < indicators.length; j++) {
-      sliders[j].classList.remove("slide-current");
+      slidersHead[j].classList.remove("slide-current");
       indicators[j].classList.remove("current");
     }
     evt.preventDefault();
-    sliders[i].classList.add("slide-current");
+    slidersHead[i].classList.add("slide-current");
     indicators[i].classList.add("current");
   }))
 }
 
 pushForward.addEventListener("click", function (evt) {
-  for (let i = 0; i < sliders.length-1; i++) {
-    if (sliders[i].classList.contains("slide-current")) {
-      sliders[i].classList.remove("slide-current");
+  for (let i = 0; i < slidersHead.length-1; i++) {
+    if (slidersHead[i].classList.contains("slide-current")) {
+      slidersHead[i].classList.remove("slide-current");
       indicators[i].classList.remove("current");
-      sliders[i+1].classList.add("slide-current");
+      slidersHead[i+1].classList.add("slide-current");
       indicators[i+1].classList.add("current");
       evt.preventDefault();
     }
@@ -120,11 +121,11 @@ pushForward.addEventListener("click", function (evt) {
 });
 
 pushBackward.addEventListener("click", function (evt) {
-  for (let i = sliders.length-1; i > 0; i++) {
-    if (sliders[i].classList.contains("slide-current")) {
-      sliders[i].classList.remove("slide-current");
+  for (let i = slidersHead.length-1; i > 0; i++) {
+    if (slidersHead[i].classList.contains("slide-current")) {
+      slidersHead[i].classList.remove("slide-current");
       indicators[i].classList.remove("current");
-      sliders[i-1].classList.add("slide-current");
+      slidersHead[i-1].classList.add("slide-current");
       indicators[i-1].classList.add("current");
       evt.preventDefault();
     }

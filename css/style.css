@@ -681,7 +681,6 @@
   text-transform: none;
   color: var(--basic-white);
   background-color: var(--basic-peach-opacity);
-  background-repeat: no-repeat;
   width: 620px;
   height: 266px;
   grid-column: 1 / 3;
@@ -689,40 +688,38 @@
   padding: 0;
   margin: 0;
   z-index: 4;
-  background-image: url("../img/catalog-image-punchers.jpg");
-  box-shadow: inset 0 104px 0 0 var(--special-opacity-black);
-}
-
-.slider-item p {
-  font-family: "Cuprum", Tahoma, sans-serif;
-  font-weight: 400;
   position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: none;
-  bottom: 15px;
 }
 
 .slider-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slide-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
-  padding: 5px 0 0 0;
+  padding: 23px 0 5px 25px;
   margin: 0;
   text-transform: uppercase;
 }
 
-.slider-list {
-  padding-left: 25px;
+.slider-item p {
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+  padding: 0 0 20px 25px;
+  margin: 0;
 }
 
 .slider-indicators {
-  position: relative;
-  bottom: -96px;
+  position: absolute;
+  left: 290px;
+  bottom: 32px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -741,11 +738,27 @@
 }
 
 .slider-indicators button:focus {
-  box-shadow: 0 0 0 2px var(--basic-gray);
+  box-shadow: 0 0 0 1px var(--basic-white);
+}
+
+.slider-punchers {
+  background-image: url("../img/catalog-image-punchers.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-drills {
+  background-image: url("../img/catalog-image-drills.jpg");
+  background-repeat: no-repeat;
 }
 
 .slider-item {
   display: none;
+  box-sizing: border-box;
+  width: 620px;
+  height: 266px;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 104px 0 0 var(--special-opacity-black);
 }
 
 .slide-current {
@@ -754,6 +767,13 @@
 
 .slider-indicators .current {
   background-color: var(--basic-light-red);
+}
+
+.slider-buttons {
+  position: absolute;
+  width: inherit;
+  height: min-content;
+  bottom: 83px;
 }
 
 .button-backward,
@@ -781,15 +801,13 @@
   bottom: 17px;
 }
 
-.catalog-drill {
-  background-color: var(--basic-peach-opacity);
-  background-image: url("../img/catalog-image-drills.jpg");
-}
-
 .catalog-puncher-drill a {
-  position: relative;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 25px;
-  top: 14px;
+  top: 201px;
 }
 
 .main-button-link {
