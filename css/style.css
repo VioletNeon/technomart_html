@@ -322,6 +322,10 @@
   padding: 8px 20px 8px 20px;
 }
 
+.exit-link {
+  padding: 8px 0 8px 0;
+}
+
 .icon-login-enter {
   position: relative;
   top: 2px;
@@ -426,8 +430,8 @@
   margin: 0;
   align-content: center;
   padding-top: 10px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 30px;
+  padding-left: 30px;
   width: auto;
   height: 42px;
   text-align: center;
@@ -961,6 +965,7 @@
     38px
     1fr;
   row-gap: 10px;
+  z-index: 4;
 }
 
 .button-buy {
@@ -1249,7 +1254,12 @@
   border: 1px solid var(--special-extra-dark-blue);
   font-size: 21px;
   line-height: 30px;
+  outline: none;
   box-shadow: 0 1px 0 var(--special-extra-dark-blue), inset 0 1px 0 var(--special-shadow-tab), inset -5px 0 5px 0 var(--logo-shadow);
+}
+
+.service-tabs>label:focus {
+  box-shadow: 0 0 0 2px var(--special-extra-dark-blue);
 }
 
 .service-tabs>label:hover {
@@ -2176,7 +2186,7 @@
 .punchers-list {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  max-height: 1020px;
+  min-height: 1020px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -2523,6 +2533,10 @@
   border: none;
 }
 
+.modal-proceed:focus {
+  box-shadow: 0 0 0 2px var(--basic-gray);
+}
+
 .button-link-basket {
   color: var(--basic-white);
   background-color: var(--basic-light-red);
@@ -2537,7 +2551,8 @@
   padding: 0;
 }
 
-.authorized .login {
+.authorized .login,
+.authorized .exit-link {
   width: min-content;
   height: 45px;
   padding-right: 0;
@@ -2565,6 +2580,8 @@
   position: relative;
   top: 3px;
 }
+
+
 
 .authorized .icon-login-exit {
   display: inline-block;
