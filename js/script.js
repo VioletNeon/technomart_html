@@ -2,7 +2,7 @@
 /* Message-modal-elements */
 const writeMessage = document.querySelector(".button-write-message");
 const messagePopup = document.querySelector(".modal-feedback");
-const messageClose = document.querySelector(".modal-close");
+const messageClose = document.querySelector(".modal-feedback .modal-close");
 const messageForm = document.querySelector(".name-form");
 const writeName = document.querySelector(".name-container input");
 const writeEmail = document.querySelector(".email-container input");
@@ -11,6 +11,7 @@ const messageEntryField = document.querySelector(".email-container input");
 /* Map-modal-elements */
 const mapLink = document.querySelector(".contacts-button-map");
 const mapPopup = document.querySelector(".modal-map");
+const mapClose = document.querySelector(".modal-map .modal-close");
 
 /* Slider-elements */
 const pushBackward = document.querySelector(".button-backward");
@@ -20,6 +21,7 @@ const sliders = document.querySelectorAll(".slider-item");
 
 /* Basket-elements */
 const addBasketPopup = document.querySelector(".modal-basket");
+const basketClose = document.querySelector(".modal-basket .modal-close");
 const pushBuy = document.querySelectorAll(".button-buy");
 const proceed = document.querySelector(".modal-proceed");
 const marker = document.querySelector(".marker");
@@ -27,6 +29,7 @@ const basket = document.querySelector(".basket");
 const basketScore = document.querySelector(".basket-score");
 const markerScore = document.querySelector(".marker-score");
 const pushMarker = document.querySelectorAll(".button-marker");
+
 
 
 /* Message-modal-options */
@@ -99,8 +102,8 @@ if (mapLink) {
   })
 }
 
-if (messageClose) {
-  messageClose.addEventListener("click", function (evt) {
+if (mapClose) {
+  mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
   })
@@ -187,8 +190,8 @@ if (pushMarker.length) {
   }
 }
 
-if (messageClose) {
-  messageClose.addEventListener("click", function (evt) {
+if (basketClose) {
+  basketClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     addBasketPopup.classList.remove("modal-show");
   })
